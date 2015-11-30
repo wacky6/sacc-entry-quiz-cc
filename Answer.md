@@ -65,7 +65,7 @@ ptr[3]为char型，所以输出的16进制数不可能为AB，CD的char偏移量
 `3/2.0`为整数除浮点数，两者均转换为浮点数，再进行除法，返回值为浮点数`1.5`  
 (参见7，Implicit conversion）
 
-##### 7. (D) 类型提升 (Arithmetic Type Promotion)，补码表示/溢出
+##### 7. (C) 类型提升 (Arithmetic Type Promotion)，补码表示/溢出
 执行算术运算时，先对操作数进行类型提升，然后再运算，最后将结果裁剪(Truncate)到目标类型。
 `a++`：`a=a+1`，提升a到`int`，计算结果为`32768`，然后按照short裁剪，结果为`-32768`
 `b+1`：提升b到`int`，计算结果为`32768`，作为printf参数。  
